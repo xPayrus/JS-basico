@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CursoPlatzi</title>
+  </head>
+  <h1>CursoPlatzi</h1>
+  <body>
+    <script>
+      //****** Test de JavaScript ******
+      //   Variables y operaciones
+      //    (1)
+      //¿Qué es una variable y para qué sirve?
+      /* es un dato que puede cambiar y sirve para almacenar datos */
+      // ¿Cuál es la diferencia entre declarar e inicializar una variable?
+      /* Una variable se declara para indicarle al programa a partir de qué lugar 
+      empieza a existir, qué nombre tendrá y qué tipo de datos almacenará. 
+      La asignación es dale un valor a esa variable*/
+      // ¿Cuál es la diferencia entre sumar números y concatenar strings?
+      /* los numeros se suman y concatenar strings los une */
+      // ¿Cuál operador me permite sumar o concatenar?
+      /* sumar: + || += concatenar: ${} */
+
+      //    (2)
+      // Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+
+      // Nombre: string
+      // Apellido: string
+      // Nombre de usuario en Platzi: string
+      // Edad: number
+      // Correo electrónico: string
+      // Mayor de edad: boolean
+      // Dinero ahorrado: number
+      // Deudas: number
+
+      //    (3)
+      //Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
+      // R/
+      //   const nombre = "Jhonny";
+      //   const apellido = "Jhonson";
+      //   const nombreDeUsuarioPlatzi = "Fornicador 3000";
+      //   const edad = 21;
+      //   const email = "elFollaCollas69@gmail.com";
+      //   const mayorDeEdad = true;
+      //   const ahorros = 1600000;
+      //   const deudas = 25000;
+
+      //   (4)
+      // Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+      // Nombre completo (nombre y apellido)
+      // Dinero real (dinero ahorrado menos deudas)
+      // R/
+      //   const nombreCompleto = `${nombre} ${apellido}`;
+      //   const dineroReal = ahorros - deudas;
+
+      //   console.log(nombreCompleto, dineroReal);
+      //    Funciones
+      //    (1)
+      // ¿Qué es una función?
+      /*  un conjunto de instrucciones que realiza una tarea o calcula un valor */
+      // ¿Cuándo me sirve usar una función en mi código?
+      /* cuando necesite llamarla o usarla en el codigo
+            Cuando se esta realizando una acción en el codigo que se repite mas de una vez*/
+      // ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+      /* Los parametros se refieren al nombre de la variable que va a usar la funcion,
+            mientras que los argumentos son los valores como tal
+            ejemplo:
+            // parametros
+            function sumar(num1, num2){
+              ...
+            }
+
+            // arguments
+            const argumentOne = 10;
+            const argumentTwo = 50;
+
+            const result = sumar(argumentOne, argumentTwo);*/
+
+      //   (2)
+      /* Convierte el siguiente código en una función, pero, cambiando cuando sea necesario
+          las variables constantes por parámetros y argumentos en una función: */
+
+      /* const name = "Juan David";
+            const lastName = "Castro Gallego";
+            const completeName = name + lastName;
+            const nickname = "Pepe";
+
+            console.log(
+              "Mi nombre es " +
+                completeName +
+                ", pero prefiero que me digas " +
+                nickname +
+                "."
+            ); */
+
+      // R/
+      /* const llamaMeAsi = (name, lastName, nickname) => {
+        const completeName = name + " " + lastName;
+        console.log(
+          `Mi nombre es ${completeName}, pero me puedes decir ${nickname}`
+        );
+      };
+      llamaMeAsi("Rodolfo", "Paterson", "Rody P "); */
+
+      //   Condicionales
+      //  (1)
+      // ¿Qué es un condicional?
+      /*  Es una expresion que se usa en programacion para hacer algo si una condicion se cumple,
+      mientras que hacer otra cosa en caso de que la condidcion no se cumpla */
+      // ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+      /* if, if else, switch */
+      // ¿Puedo combinar funciones y condicionales?
+      /* si */
+
+      //   (2)
+      // Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+      /* const tipoDeSuscripcion = "Basic";
+
+      switch (tipoDeSuscripcion) {
+        case "Free":
+          console.log("Solo puedes tomar los cursos gratis");
+          break;
+        case "Basic":
+          console.log(
+            "Puedes tomar casi todos los cursos de Platzi durante un mes"
+          );
+          break;
+        case "Expert":
+          console.log(
+            "Puedes tomar casi todos los cursos de Platzi durante un año"
+          );
+          break;
+        case "ExpertPlus":
+          console.log(
+            "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+          );
+          break;
+      } */
+
+      //   R/
+
+      /* const tipoDeSuscripcion = "Basic";
+
+      if (tipoDeSuscripcion === "Free") {
+        console.log("Solo puedes tomar los cursos gratis");
+      } else if (tipoDeSuscripcion === "Basic") {
+        console.log(
+          "Puedes tomar casi todos los cursos de Platzi durante un mes"
+        );
+      } else if (tipoDeSuscripcion === "Expert") {
+        console.log(
+          "Puedes tomar casi todos los cursos de Platzi durante un año"
+        );
+      } else {
+        console.log(
+          "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+        );
+      } */
+
+      //   (3)
+      //Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if)
+      // R/
+      /* const tipoDeSuscripcion = "ExpertPlus";
+
+      if (tipoDeSuscripcion === "Free")
+        console.log("Solo puedes tomar los cursos gratis");
+      if (tipoDeSuscripcion === "Basic")
+        console.log(
+          "Puedes tomar casi todos los cursos de Platzi durante un mes"
+        );
+      if (tipoDeSuscripcion === "Expert")
+        console.log(
+          "Puedes tomar casi todos los cursos de Platzi durante un año"
+        );
+      if (tipoDeSuscripcion === "ExpertPlus")
+        console.log(
+          "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+        ); */
+
+      //  Ciclos
+      //    (1)
+      // ¿Qué es un ciclo?
+      /* es una herramienta que sirve para recorrer e iterar un objeto/array  */
+      // ¿Qué tipos de ciclos existen en JavaScript?
+      /* for, foreach, for in, for of, while, do while */
+      // ¿Qué es un ciclo infinito y por qué es un problema?
+      /* es un ciclo que no tiene condicion para romperse y salir de el
+      es un problema porque puede ralentizar el programa */
+      // ¿Puedo mezclar ciclos y condicionales?
+      /* si */
+
+      //    (2)
+      // Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+      /* for (let i = 0; i < 5; i++) {
+        console.log("El valor de i es: " + i);
+      }
+
+      for (let i = 10; i >= 2; i--) {
+        console.log("El valor de i es: " + i);
+      } */
+
+      // R/
+      /* let x = 0;
+      let z = 10;
+      while (x < 5) {
+        x++;
+        console.log("El valor de x es: " + x);
+      }
+
+      while (z > 2) {
+        z--;
+        console.log("El valor de z es: " + z);
+      } */
+
+      //    (3)
+      /* Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien,
+      mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar. */
+
+      //con ciclos
+      /* do {
+        userAnswer = prompt(
+          "Hola, ¿cuánto es 2 + 2? \n Hint: La respuesta no es pez"
+        );
+      } while (userAnswer !== "4");
+
+      alert("You Finally answered correctly"); */
+
+      //con condicionales
+      /* const pregunta = prompt("cuanto es 2 + 2");
+
+      if (pregunta == 4) {
+        alert("felicitaciones, no eres estupido");
+      } else {
+        alert("no vales monda cole");
+      } */
+
+      //    Listas
+      //  (1)
+      // ¿Qué es un array?
+      /* es un arreglo/lista de varios elementos */
+      // ¿Qué es un objeto?
+      /* Es una lista de elementos, donde nosotros asignamos
+      una llave y un valor de cada propiedad dentro del objeto */
+      // ¿Cuándo es mejor usar objetos o arrays?
+      /* Los arrays se usan para series que poseen valores simples,
+      mientras que los objetos son utilizadas para las series en que hay
+      distintos objetos y propiedades con diferentes valores. */
+      // ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+      /* si */
+
+      //  (2)
+      // Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+      /* const primerElemento = (array) => {
+        console.log(array[0]);
+      };
+
+      primerElemento([5, 6, 7, 8, 9]); */
+
+      //  (3)
+      /* Crea una función que pueda recibir cualquier array como parámetro e imprima todos
+      sus elementos uno por uno (no se vale imprimir el array completo). */
+
+      /* const myArray = ["perro", "gato", "pato"];
+
+      const arrayUnoPorUNO = (array) => {
+        for (let i = 0; i < array.length; i++) {
+          console.log(`${i + 1} ${array[i]}`);
+        }
+      };
+
+      arrayUnoPorUNO(myArray); */
+
+      //  (4)
+      /* Crea una función que pueda recibir cualquier array como parámetro e imprima todos
+      sus elementos uno por uno (no se vale imprimir el array completo). */
+
+      /* const myObj = {
+        nombre: "Juan",
+        edad: 37,
+        ocupacion: "dentista",
+      };
+
+      const objUnoPorUNO = (object) => {
+        for (const key in object) {
+          console.log(object[key]);
+        }
+      };
+
+      objUnoPorUNO(myObj); */
+    </script>
+  </body>
+</html>
